@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StylePick — Curated Fashion & Style Recommendations</title>
+  <meta name="description" content="Discover handpicked fashion finds, style tips, and the best clothing deals. StylePick curates top-rated apparel, accessories, and seasonal essentials.">
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👔</text></svg>">
+</head>
+<body>
+
+  <!-- ======== HEADER ======== -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="index.html" class="header__logo">Style<span>Pick</span></a>
+      <nav class="header__nav" id="headerNav">
+        <ul class="header__links">
+          <li><a href="#categories">Categories</a></li>
+          <li><a href="#picks">Top Picks</a></li>
+          <li><a href="#how-it-works">How It Works</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ======== HERO ======== -->
+  <section class="hero" id="hero">
+    <div class="hero__bg">
+      <img src="images/hero-banner.png" alt="Stylish fashion flat-lay" width="1200" height="800">
+    </div>
+    <div class="hero__overlay"></div>
+    <div class="container hero__content">
+      <span class="hero__badge">New Picks Every Week</span>
+      <h1 class="hero__title">Your Personal <span class="accent">Style Guide</span> for Every Occasion</h1>
+      <p class="hero__desc">We scour thousands of products to bring you the best fashion finds — handpicked outfits, trending accessories, and seasonal essentials at the best prices.</p>
+      <div class="hero__actions">
+        <a href="#picks" class="btn btn--primary">Explore Top Picks →</a>
+        <a href="#how-it-works" class="btn btn--outline">How It Works</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== CATEGORIES ======== -->
+  <section class="categories" id="categories">
+    <div class="container">
+      <div class="categories__header">
+        <span class="section-label">Browse by category</span>
+        <h2 class="section-title">Find Your <span class="accent">Perfect Style</span></h2>
+        <p class="section-desc">From everyday casuals to statement pieces — explore curated collections across every fashion category.</p>
+      </div>
+      <div class="categories__grid">
+        <a href="#" class="category-card" id="cat-mens">
+          <img src="images/product-mens.png" alt="Men's fashion" width="400" height="530" loading="lazy">
+          <div class="category-card__overlay">
+            <h3 class="category-card__title">Men's Essentials</h3>
+            <span class="category-card__count">42 curated picks</span>
+          </div>
+        </a>
+        <a href="#" class="category-card" id="cat-womens">
+          <img src="images/product-womens.png" alt="Women's fashion" width="400" height="530" loading="lazy">
+          <div class="category-card__overlay">
+            <h3 class="category-card__title">Women's Collection</h3>
+            <span class="category-card__count">56 curated picks</span>
+          </div>
+        </a>
+        <a href="#" class="category-card" id="cat-accessories">
+          <img src="images/product-accessories.png" alt="Fashion accessories" width="400" height="530" loading="lazy">
+          <div class="category-card__overlay">
+            <h3 class="category-card__title">Accessories</h3>
+            <span class="category-card__count">38 curated picks</span>
+          </div>
+        </a>
+        <a href="#" class="category-card" id="cat-seasonal">
+          <img src="images/product-seasonal.png" alt="Seasonal outerwear" width="400" height="530" loading="lazy">
+          <div class="category-card__overlay">
+            <h3 class="category-card__title">Seasonal Picks</h3>
+            <span class="category-card__count">29 curated picks</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== FEATURED PICKS ======== -->
+  <section class="featured" id="picks">
+    <div class="container">
+      <div class="featured__header">
+        <div>
+          <span class="section-label">Hand-selected for you</span>
+          <h2 class="section-title">This Week's <span class="accent">Top Picks</span></h2>
+          <p class="section-desc">Our editors' favorite finds — quality, style, and value all in one.</p>
+        </div>
+        <a href="#" class="btn btn--outline">View All →</a>
+      </div>
+      <div class="featured__grid">
+
+        <!-- Product 1 -->
+        <article class="product-card" id="product-1">
+          <div class="product-card__img">
+            <img src="images/product-mens.png" alt="Classic Crew Neck Tee" width="400" height="300" loading="lazy">
+          </div>
+          <div class="product-card__body">
+            <span class="product-card__tag">Men's</span>
+            <h3 class="product-card__title">Classic Crew Neck Cotton Tee — Premium Fit</h3>
+            <div class="product-card__price">$28.99 <span class="original">$39.99</span></div>
+            <a href="#" class="product-card__cta">View on Amazon <span>→</span></a>
+          </div>
+        </article>
+
+        <!-- Product 2 -->
+        <article class="product-card" id="product-2">
+          <div class="product-card__img">
+            <img src="images/product-womens.png" alt="Cashmere Wrap Cardigan" width="400" height="300" loading="lazy">
+          </div>
+          <div class="product-card__body">
+            <span class="product-card__tag">Women's</span>
+            <h3 class="product-card__title">Cashmere Wrap Cardigan — Everyday Elegance</h3>
+            <div class="product-card__price">$64.00 <span class="original">$89.00</span></div>
+            <a href="#" class="product-card__cta">View on Amazon <span>→</span></a>
+          </div>
+        </article>
+
+        <!-- Product 3 -->
+        <article class="product-card" id="product-3">
+          <div class="product-card__img">
+            <img src="images/product-accessories.png" alt="Leather Crossbody Bag" width="400" height="300" loading="lazy">
+          </div>
+          <div class="product-card__body">
+            <span class="product-card__tag">Accessories</span>
+            <h3 class="product-card__title">Genuine Leather Crossbody Bag — Timeless Design</h3>
+            <div class="product-card__price">$45.50 <span class="original">$62.00</span></div>
+            <a href="#" class="product-card__cta">View on Amazon <span>→</span></a>
+          </div>
+        </article>
+
+        <!-- Product 4 -->
+        <article class="product-card" id="product-4">
+          <div class="product-card__img">
+            <img src="images/product-seasonal.png" alt="Wool Overcoat" width="400" height="300" loading="lazy">
+          </div>
+          <div class="product-card__body">
+            <span class="product-card__tag">Seasonal</span>
+            <h3 class="product-card__title">Camel Wool Overcoat — Winter Essential</h3>
+            <div class="product-card__price">$129.00 <span class="original">$189.00</span></div>
+            <a href="#" class="product-card__cta">View on Amazon <span>→</span></a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== HOW IT WORKS ======== -->
+  <section class="how-it-works" id="how-it-works">
+    <div class="container">
+      <div class="how-it-works__header">
+        <span class="section-label">Simple & transparent</span>
+        <h2 class="section-title">How <span class="accent">StylePick</span> Works</h2>
+        <p class="section-desc">We do the research so you don't have to. Here's how we find the best deals for you.</p>
+      </div>
+      <div class="steps">
+        <div class="step">
+          <div class="step__number">1</div>
+          <h3 class="step__title">We Research</h3>
+          <p class="step__desc">Our team reviews hundreds of products across top brands, comparing quality, ratings, and price.</p>
+        </div>
+        <div class="step">
+          <div class="step__number">2</div>
+          <h3 class="step__title">We Curate</h3>
+          <p class="step__desc">Only the best make the cut. We handpick items that offer real value and standout style.</p>
+        </div>
+        <div class="step">
+          <div class="step__number">3</div>
+          <h3 class="step__title">You Save</h3>
+          <p class="step__desc">Click through to shop on Amazon with confidence — knowing you're getting a great deal on a great product.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== NEWSLETTER ======== -->
+  <section class="newsletter" id="newsletter">
+    <div class="container">
+      <div class="newsletter__card">
+        <span class="section-label">Stay in the loop</span>
+        <h2 class="newsletter__title">Get Weekly Style Picks in Your Inbox</h2>
+        <p class="newsletter__desc">Join our newsletter for hand-selected fashion finds, exclusive deals, and seasonal trend reports.</p>
+        <form class="newsletter__form" id="newsletterForm">
+          <input type="email" class="newsletter__input" placeholder="Enter your email" required aria-label="Email address">
+          <button type="submit" class="btn btn--primary">Subscribe</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== FOOTER ======== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p class="footer__copy">&copy; 2025 StylePick. All rights reserved.</p>
+      <nav class="footer__links">
+        <a href="about.html">About</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="mailto:contact@stylepick.com">Contact</a>
+      </nav>
+      <p class="footer__affiliate-note">As an Amazon Associate, StylePick earns from qualifying purchases. Product prices and availability are subject to change.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
